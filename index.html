@@ -7,8 +7,18 @@
   box-sizing: border-box;
 }
 
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+  background-color:	yellow;
+  color: black;
+}	
+
+table, th, td {
+  border: 1px solid black;
+}
+
 #myInput {
-  background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   width: 100%;
@@ -16,8 +26,8 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
-}
-
+}	
+	
 #myTable {
   border-collapse: collapse;
   width: 100%;
@@ -42,17 +52,22 @@
 <body>
 
 <h2>Anime Art Theft Database</h2>
+This database is maintained by the Anime Art Theft Prevention Project.
+<br>
+<img src="assets/logo.png" width="300">
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Input your Pixiv UserID" title="Type in Pixiv UserID">
 
+<h4>Please copy and paste the Link to Stolen Art Post from the database to your address bar if you wish to access it.</h4>
+
 <table id="myTable">
-  <tr class="header">
-    <td style=min-width:50px>Database Entry Discriminator</td>
-    <td style=min-width:50px>Pixiv UserID</td>
-    <td style=min-width:50px>Artist Twitter Account</td>
-    <td style=min-width:50px>Archive Reference Number</td>
-    <td style=min-width:50px>Archive Entry Timestamp</td>
-    <td style=min-width:50px>Link to Stolen Art Post</td>
+	<tr>
+    <th>Database Entry Discriminator</th>
+    <th>Pixiv UserID</th>
+    <th>Artist Twitter Account</th>
+    <th>Archive Reference Number</th>
+    <th>Archive Entry Timestamp</th>
+    <th>Link to Stolen Art Post</th>
 </tr>
 <tr>
   <td style=min-width:50px>DB-000001</td>
